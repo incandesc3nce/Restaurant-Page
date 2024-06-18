@@ -42,6 +42,8 @@ h6 {
 :root {
   --accent-color: #967259;
   --paragraph-color: #272727e0;
+  --btn-active: #ffffff;
+  --btn-inactive: #ffffffbd;
 }
 
 body {
@@ -67,19 +69,34 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+nav button {
+  background-color: transparent;
+  border: 0;
+
+  padding: 0.5em 0.5em 0.1em 0.5em;
+  margin-bottom: 0.5em;
+}
+nav button:hover {
+  cursor: pointer;
+}
+
+.btn-active {
+  color: var(--btn-active);
+  border-bottom: 2px solid #fff;
+}
 
 #content {
   grid-column: 2/3;
   grid-row: 2/4;
 
-  background-color: rgb(255, 254, 240);
+  background-color: rgb(255, 248, 225);
 }
 
 .heading h1, .heading p {
   text-align: center;
 }
 .heading h1 {
-  font-family: 'DM Serif Display';
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
   text-align: center;
 }
 .heading p {
@@ -99,7 +116,7 @@ nav {
   color: var(--paragraph-color);
 }
 
-.home {
+.home, .after-list {
   padding: 1em 1em;
 }
 
@@ -125,6 +142,7 @@ nav {
   padding: 1em;
 }
 .location h2 {
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
   text-align: center;
 }
 
@@ -138,6 +156,11 @@ nav {
 
   color: var(--paragraph-color);
 }
+.location .phone {
+ text-decoration: none;
+ color: var(--accent-color);
+ font-weight: 650;
+}
 
 footer {
   background-color: var(--accent-color);
@@ -150,4 +173,9 @@ footer {
 
   font-size: smaller;
   color: #ffffff9d;
+}
+
+footer a {
+  color: #fc70af;
+  text-decoration: none;
 }
