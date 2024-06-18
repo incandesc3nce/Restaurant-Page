@@ -68,6 +68,8 @@ header {
 
   grid-column: 1/4;
   grid-row: 1/2;
+
+  height: 70px;
 }
 nav {
   display: flex;
@@ -128,7 +130,7 @@ nav button:hover {
   margin: 0.5em 0;
 }
 
-.home p, .home-list {
+.home p, .home-list, .about {
   line-height: 1.5;
   text-indent: 15px;
   font-weight: 420;
@@ -209,11 +211,15 @@ nav button:hover {
   color: var(--coffee-text);
 
   margin: 1em 2em;
+  padding-bottom: 1em;
 
   box-shadow: #666666 5px 5px 10px;
 }
 .coffee-card img {
   width: 200px;
+}
+.coffee-card .info {
+  padding-right: 1em;
 }
 .coffee-card .info .name {
   font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
@@ -227,6 +233,15 @@ nav button:hover {
 }
 
 /* About */
+
+.about {
+  padding: 1em 1em;
+}
+.about h2 {
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-size: min(5vw, 2.5rem);
+  color: var(--heading-color)
+}
 
 footer {
   background-color: var(--heading-color);
