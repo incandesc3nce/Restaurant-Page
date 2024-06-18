@@ -7,7 +7,7 @@ export const fillHomeContent = () => {
   const heading_h1 = document.createElement('h1')
   heading_h1.textContent = 'Calm Coffee';
   const heading_p = document.createElement('p');
-  heading_p.textContent = 'Feel at ease wit our coffee';
+  heading_p.textContent = 'Feel at ease with our coffee';
 
   heading.appendChild(heading_h1);
   heading.appendChild(heading_p);
