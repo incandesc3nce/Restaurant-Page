@@ -40,7 +40,8 @@ h6 {
 
 
 :root {
-  --accent-color: #967259;
+  --coffee-card: #967259;
+  --coffee-text: #ece0d1;
   --heading-color: #38220f;
   --misc-color: #634832;
   --paragraph-color: #272727e0;
@@ -80,6 +81,9 @@ nav button {
 
   padding: 0.5em 0.5em 0.1em 0.5em;
   margin-bottom: 0.5em;
+
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
 }
 nav button:hover {
   cursor: pointer;
@@ -105,12 +109,14 @@ nav button:hover {
   border: 5px solid var(--misc-color);
 }
 
+/* Home */
 .heading h1, .heading p {
   text-align: center;
 }
 .heading h1 {
   font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
   text-align: center;
+  font-size: min(5vw, 4rem);
   color: var(--heading-color)
 }
 .heading p {
@@ -183,6 +189,44 @@ nav button:hover {
  color: var(--heading-color);
  font-weight: 550;
 }
+
+/* Menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.coffee-card {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 2em;
+
+  border: 5px solid var(--coffee-card);
+  border-radius: 15px;
+  background-color: #38220f;
+  color: var(--coffee-text);
+
+  margin: 1em 2em;
+
+  box-shadow: #666666 5px 5px 10px;
+}
+.coffee-card img {
+  width: 200px;
+}
+.coffee-card .info .name {
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-size: min(5vw, 4rem); 
+}
+.coffee-card .info .desc {
+  font-weight: 500;
+}
+.coffee-card .info .price {
+  padding-top: 0.5em;
+}
+
+/* About */
 
 footer {
   background-color: var(--heading-color);
