@@ -118,7 +118,7 @@ nav button:hover {
 }
 
 .home p {
-  padding: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .home p, .home-list {
@@ -135,7 +135,7 @@ nav button:hover {
   padding: 1em 1em;
 }
 #after-list {
-  padding: 1.5em 0;
+  margin: 2em 0;
 }
 
 .home-list {
