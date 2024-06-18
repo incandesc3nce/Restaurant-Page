@@ -1,6 +1,7 @@
 import { fillHomeContent } from "./content-modules/home";
 import { fillMenuContent } from "./content-modules/menu";
 import { fillAboutContent } from "./content-modules/about";
+import html from './index.html';
 import './style.css';
 
 const buttonHandler = (function() {

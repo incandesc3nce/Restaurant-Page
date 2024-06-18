@@ -1,3 +1,5 @@
+import stock_coffee from '../../assets/images/stock_coffee.png';
+
 export const fillMenuContent = () => {
   const content = document.querySelector('#content');
   const heading = document.createElement('div');
@@ -30,7 +32,7 @@ export const fillMenuContent = () => {
     coffeeCard.classList.add('coffee-card');
 
     const img = document.createElement('img');
-    img.src = '../assets/images/stock_coffee.png';
+    img.src = `${stock_coffee}`;
     img.alt = 'Cup of coffee';
 
     const info = document.createElement('div');
