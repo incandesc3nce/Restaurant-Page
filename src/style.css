@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/static/Inter-Regular.ttf') format('truetype');
+}
