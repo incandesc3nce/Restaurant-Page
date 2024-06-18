@@ -36,7 +36,7 @@ export const fillMenuContent = () => {
     const info = document.createElement('div');
     info.classList.add('info');
 
-    const name = document.createElement('p');
+    const name = document.createElement('h2');
     name.classList.add('name');
     name.textContent = coffeeDrinks.names[i];
 
