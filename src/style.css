@@ -69,7 +69,9 @@ header {
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  gap: 7vw;
 }
 nav button {
   background-color: transparent;
@@ -129,8 +131,11 @@ nav button:hover {
   color: var(--paragraph-color);
 }
 
-.home, .after-list {
+.home {
   padding: 1em 1em;
+}
+#after-list {
+  padding: 1.5em 0;
 }
 
 .home-list {
