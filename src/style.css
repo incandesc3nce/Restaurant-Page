@@ -59,7 +59,7 @@ body {
   font-size: 1.3rem;
 
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 0.2fr 5fr 0.6fr;
 }
 
@@ -254,9 +254,51 @@ footer {
 
   font-size: smaller;
   color: #ffffff9d;
+  text-align: center;
 }
 
 footer a {
   color: #967259;
   text-decoration: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+  body {
+    grid-template-columns: 0.5fr 7fr 0.5fr;
+  }
+  .heading h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    grid-template-columns: 0.2fr 7fr 0.2fr;
+  }
+  .coffee-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .coffee-card img {
+    width: 70%;
+  }
+  .coffee-card .info {
+    padding-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .coffee-card .info .name {
+    font-size: 2rem;
+  }
+  .coffee-card .info .desc, .coffee-card .info .price {
+    font-size: 1.2rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
 }
