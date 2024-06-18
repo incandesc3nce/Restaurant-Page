@@ -60,8 +60,6 @@ export const fillHomeContent = () => {
   address.appendChild(address_2);
 
   location_address.appendChild(address);
-  location_address.appendChild(document.createElement('br'));
-  location_address.appendChild(document.createElement('br'));
 
   const phone = document.createElement('div');
   phone.textContent = 'Phone: 555-555-5555';
@@ -71,8 +69,8 @@ export const fillHomeContent = () => {
 
   location.appendChild(location_h2);
   location.appendChild(location_address);
-  location.appendChild(phone);
-  location.appendChild(work_hours);
+  location_address.appendChild(phone);
+  location_address.appendChild(work_hours);
 
   content.appendChild(location);
 };
